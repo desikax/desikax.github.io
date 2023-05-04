@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generic Webservice</title>
+<link rel="icon" href="webservice.ico" />
+<link rel="stylesheet" href="formback.css" media="screen and (max-width: 600px)"/>
+</head>
+<style>
+
+  body{
+	background-image: url("https://wallpapercave.com/wp/wp2757874.gif");   
+}
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  width: 10%;
+  background-color:#17171f;
+  position: fixed;
+  height: 30%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #812e35;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color:#812e35;
+}
+
+p{
+ text-indent: 0px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color:white;
+}
+
+
+
+  @media only screen and (max-width: 1300px) {
+    .menuList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<body>
+<ul> 
+  <li><a class="active" href="create">Create</a></li>
+  <li><a href="insert">Insert</a></li>
+    <li><a href="read">Read</a></li>
+  <li><a href="update">Update</a></li>
+  <li><a href="delete">Delete</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h1>API GENERATION FOR GENERIC WEBSERVICE</h1>
+<p>It is a web service for storing, accessing, modifying, retrieving databases shared by a group of web clients. Java technologies are usually used to build web applications where accessing relational databases are through JDBC API but that requires a database system specific JDBC driver that is pre-installed in the application site.
+In this model, we have implemented the CRUD operations on the databases through JPA (Java Persistence API) where a generic database can be created, and operations performed on them. This stores metadata of the service to be created and operations are performed through it. APIs are created for the Microservice and presented to the developers developing a frontend.
+The Service will need to store different data bases and present them to different clients.</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Generic Webservice</title>
+</head>
+<style>
+  body{
+	background-image: url("https://i.pinimg.com/originals/e5/c8/03/e5c803a1f390a8bfb5f45abd8a055ba5.jpg"); 
+	color:white;
+	text-align:center;
+    font-size:18;  
+}
+.form3 {
+    text-align:center;
+    font-size:10px;
+	margin: 100px 200px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+   	border: 6px solid #f1f1f1;
+ }
+        button {
+    background-color: black;
+    color: white;
+    padding: 40px 40px;
+    border: 5px solid #grey;
+    cursor: grabbing;
+    
+ }
+    button:hover {
+    opacity: 0.8;
+}
+    .formcontainer {
+    text-align: left;
+    margin: 24px 50px 12px;
+}
+input[type=text],[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color:white;
+  background-color:black;
+  font-family: 'georgia';
+  font-size:18px;
+  text-align: center;
+}
+textarea {
+  resize: none;
+   width: 100%;
+  padding: 100px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+   color:white;
+  background-color:black;
+}
+.box {
+  inline-size: 500px; 
+  overflow: hidden;
+}
+@media only screen and (max-width: 1300px) {
+.menuList {
+grid-template-columns: 1fr 1fr;
+}
+}
+@media only screen and (max-width: 800px) {
+.menuList {
+grid-template-columns: 1fr;
+}
+}
+</style>
+<body>
+<form>
+<div class="form3">
+<h1>The details you requested through API:</h1>
+<div class="box">
+<h1 th:text=" ${yesno}"></h1>
+</div>
+</div>
+</form3>
+</body>
+</html>
